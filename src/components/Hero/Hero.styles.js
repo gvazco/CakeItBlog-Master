@@ -29,7 +29,6 @@ export const HeaderWrapper = styled.div`
     text-transform: none;
     text-align: center;
     font-family: "Teko", Arial, Helvetica, sans-serif;
-    line-height: 80px;
     letter-spacing: 5px;
     text-shadow: #000 2px 2px 2px;
     width: 66%;
