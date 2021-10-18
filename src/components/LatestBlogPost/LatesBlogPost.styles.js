@@ -12,8 +12,11 @@ export const Image = styled.div`
   max-height: 100px;
   position: relative;
   overflow: hidden;
-  filter: brightness(70%);
-  transition: 0.3s ease-in;
+
+  img {
+    filter: brightness(70%);
+    transition: 0.3s ease-in;
+  }
 
   :hover img {
     filter: brightness(100%);

@@ -35,6 +35,7 @@ export const HeaderWrapper = styled.div`
     text-align: center;
     font-weight: bold;
     @media screen and (min-width: 768px) {
+      line-height: 80px;
       font-size: 4rem;
     }
   }
