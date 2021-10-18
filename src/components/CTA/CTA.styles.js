@@ -13,7 +13,13 @@ export const CTAImage = styled.div`
   position: relative;
   overflow: hidden;
 
+  img {
+    filter: brightness(70%);
+    transition: 0.3s ease-in;
+  }
+
   :hover img {
+    filter: brightness(100%);
     transform: scale(1.1);
     filter: blur(2px);
   }
@@ -40,11 +46,12 @@ export const CTAImageText = styled.p`
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   font-family: "Teko";
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 3px;
   font-size: 1.3rem;
   text-transform: uppercase;
   margin: 0px;
   padding: 0px;
+  text-shadow: #000 2px 2px 2px;
 
   @media (min-width: 768px) {
     font-size: 1rem;

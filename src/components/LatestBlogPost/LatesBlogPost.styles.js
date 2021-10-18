@@ -12,8 +12,11 @@ export const Image = styled.div`
   max-height: 100px;
   position: relative;
   overflow: hidden;
+  filter: brightness(70%);
+  transition: 0.3s ease-in;
 
   :hover img {
+    filter: brightness(100%);
     transform: scale(1.1);
     filter: blur(2px);
   }
@@ -26,7 +29,7 @@ export const Image = styled.div`
 
 export const ImageTextWrapper = styled.div`
   position: absolute;
-  color: #fff;
+  color: #fff !important;
   top: 0;
   width: 100%;
   height: 100%;
@@ -40,17 +43,18 @@ export const ImageTextWrapper = styled.div`
 export const ImageText = styled.p`
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   font-family: "Teko";
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
   letter-spacing: 1.5px;
   font-size: 1.3rem;
   text-transform: uppercase;
   margin: 0px;
   padding: 0px;
-
+  letter-spacing: 3px;
+  text-shadow: #000 2px 2px;
+  width: 80%;
   @media (min-width: 768px) {
     font-size: 1rem;
-    color: #fff;
   }
 `
 

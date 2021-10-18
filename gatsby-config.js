@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Cake It!`,
+    title: `Multycasetas`,
     description: `This is Cake It!`,
     author: `@gvazco`,
     siteUrl: `https://gvazco.github.io`,
@@ -16,12 +16,6 @@ module.exports = {
           formats: [`auto`, `webp`],
           breakpoints: [750, 1080, 1366, 1920],
           backgroundColor: `transparent`,
-          tracedSVGOptions: {},
-          blurredOptions: {},
-          jpgOptions: {},
-          pngOptions: {},
-          webpOptions: {},
-          avifOptions: {},
         },
       },
     },
@@ -49,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `https://cakeit.disturbioilustrativo.com/graphql`,
+        url: `https://multycasetas-gatsby.disturbioilustrativo.com/graphql`,
       },
     },
     `gatsby-plugin-styled-components`,

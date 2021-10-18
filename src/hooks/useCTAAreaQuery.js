@@ -11,7 +11,7 @@ export const useCTAAreaQuery = () => {
     }
 
     query CTAQuery {
-      cta: wpPage(databaseId: { eq: 47 }) {
+      cta: wpPage(databaseId: { eq: 12 }) {
         ACF_HomePage {
           cta1Link
           cta1Text
