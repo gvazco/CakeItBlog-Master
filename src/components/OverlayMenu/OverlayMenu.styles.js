@@ -25,7 +25,7 @@ export const Overlay = styled.div`
     padding: 40px;
 
     .invertedLogo {
-      max-width: 150px;
+      max-width: 120px;
       margin: 0 0 60px 0;
     }
 
