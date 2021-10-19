@@ -47,6 +47,13 @@ export const ContentWrapper = styled.div`
 
 export const PageContent = styled.article`
   margin: 20px 0 0 0;
+
+  .dot-divider {
+    width: 100%;
+    height: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+  }
 `
 
 export const StyledH2 = styled.h2`
