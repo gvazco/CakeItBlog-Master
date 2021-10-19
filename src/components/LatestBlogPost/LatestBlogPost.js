@@ -18,6 +18,7 @@ const LatestBlogPost = () => {
   return (
     <Wrapper>
       <h1>Últimas Publicaciones</h1>
+
       <Image>
         <StyledImg
           image={

@@ -15,6 +15,8 @@ import {
   StyledH2,
   StyledDate,
   StyledReadMore,
+  Image,
+  StyledImg,
 } from "./archive.styles"
 
 const archiveTemplate = ({
@@ -25,7 +27,7 @@ const archiveTemplate = ({
     <StaticImage
       src="../images/archive_headerimage.png"
       placeholder="TRACED_SVG"
-      layout="fullWidth"
+      layout="constrained"
       width={1920}
       height={300}
       alt="Blog Image Post"
@@ -39,6 +41,40 @@ const archiveTemplate = ({
       />
       <ContentWrapper>
         <ArchiveSidebar catId={catId} categories={categories.edges} />
+        <PageContent>
+          <h1 dangerouslySetInnerHTML={{ __html: catName }} />
+          {allWpPost.edges.map(post => (
+            <article key={post.node.id} className="entry-content">
+              {post.node.featuredImage !== null ? (
+                <Image>
+                  <Link to={`/blog${post.node.uri}`}>
+                    <StyledImg
+                      image={
+                        post.node.featuredImage.node.localFile.childImageSharp
+                          .gatsbyImageData
+                      }
+                      alt="Blog Image"
+                    />
+                  </Link>
+                </Image>
+              ) : null}
+              <Link to={`/blog${post.node.uri}`}>
+                <StyledH2
+                  dangerouslySetInnerHTML={{ __html: post.node.title }}
+                />
+              </Link>
+
+              <StyledDate
+                dangerouslySetInnerHTML={{ __html: post.node.date }}
+              />
+              <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+              <StyledReadMore to={`/blog${post.node.uri}`}>
+                Leer más...
+              </StyledReadMore>
+              <div className="dot-divider" />
+            </article>
+          ))}
+        </PageContent>
       </ContentWrapper>
     </Wrapper>
   </Layout>
@@ -61,6 +97,15 @@ export const pageQuery = graphql`
           uri
           slug
           date(formatString: "DD MM YYYY")
+          featuredImage {
+            node {
+              localFile {
+                childImageSharp {
+                  gatsbyImageData(width: 800, placeholder: DOMINANT_COLOR)
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -1,11 +1,41 @@
-import styled from 'styled-components';
-import { Link } from 'gatsby';
+import styled from "styled-components"
+import { Link } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
+
+export const StyledImg = styled(GatsbyImage)`
+  img {
+    transition: all 0.3s !important;
+  }
+`
+
+export const Image = styled.div`
+  margin-bottom: 20px;
+  max-height: 100px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    filter: brightness(70%);
+    transition: 0.3s ease-in;
+  }
+
+  :hover img {
+    filter: brightness(100%);
+    transform: scale(1.1);
+    filter: blur(2px);
+  }
+
+  @media (min-width: 768px) {
+    max-height: 200px;
+    width: 100%;
+  }
+`
 
 export const Wrapper = styled.div`
   max-width: 1180px;
   margin: 0 auto;
   padding: 20px;
-`;
+`
 
 export const ContentWrapper = styled.div`
   display: block;
@@ -13,11 +43,11 @@ export const ContentWrapper = styled.div`
   @media (min-width: 992px) {
     display: flex;
   }
-`;
+`
 
 export const PageContent = styled.article`
   margin: 20px 0 0 0;
-`;
+`
 
 export const StyledH2 = styled.h2`
   font-weight: 500;
@@ -25,16 +55,16 @@ export const StyledH2 = styled.h2`
   :hover {
     color: #ee2562;
   }
-`;
+`
 
 export const StyledDate = styled.div`
-  font-family: 'Teko';
+  font-family: "Teko";
   font-size: 1.1rem;
   font-weight: 600;
-`;
+`
 
 export const StyledReadMore = styled(Link)`
-  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-family: "Teko", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 800;
   color: #fff;
@@ -50,7 +80,7 @@ export const StyledReadMore = styled(Link)`
     left: 100%;
     top: 50%;
     border: solid transparent;
-    content: '';
+    content: "";
     height: 0;
     width: 0;
     position: absolute;
@@ -67,4 +97,4 @@ export const StyledReadMore = styled(Link)`
   :hover:after {
     border-left-color: #ee2562;
   }
-`;
+`
