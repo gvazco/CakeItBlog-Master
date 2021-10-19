@@ -19,7 +19,7 @@ export const Content = styled.div`
   padding: 0 20px;
 
   img {
-    width: 150px;
+    width: 120px;
     margin: 0;
     padding: 12px 0 0 0;
   }
