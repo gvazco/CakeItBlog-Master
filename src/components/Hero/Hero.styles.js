@@ -6,15 +6,29 @@ export const StyledImg = styled(GatsbyImage)`
   margin-bottom: 60px;
   width: 100%;
   filter: brightness(85%);
+
+  @media (min-width: 1920px) {
+    max-height: 640px !important;
+  } ;
 `
 
 export const FrontImg = styled(GatsbyImage)`
-  max-height: 600px;
-  margin-bottom: 40px;
+  max-height: 950px;
+  margin-top: 18px;
+
+  @media (min-width: 1920px) {
+    right: 400px;
+    width: 110%;
+    height: 110%;
+  } ;
 `
 export const FrontText = styled(GatsbyImage)`
   max-height: 600px;
   margin-bottom: 60px;
+  @media (min-width: 1920px) {
+    width: 120%;
+    height: 120%;
+  } ;
 `
 
 export const Wrapper = styled.div`
@@ -30,6 +44,12 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   height: 100%;
   width: 100%;
+
+   @media (min-width: 1920px) {
+    left: 150px;
+    
+    
+  } ;
 
   div {
     display: flex;

@@ -10,7 +10,7 @@ export const useHeroQuery = () => {
             localFile {
               publicURL
               childImageSharp {
-                gatsbyImageData(width: 600, placeholder: TRACED_SVG)
+                gatsbyImageData(width: 680, placeholder: TRACED_SVG)
               }
             }
           }
