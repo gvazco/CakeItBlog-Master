@@ -43,7 +43,7 @@ export const ImageTextWrapper = styled.div`
   text-align: center;
 `
 
-export const ImageText = styled.p`
+export const ImageText = styled.h1`
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   font-family: "Teko";
   color: #fff !important;
@@ -57,7 +57,7 @@ export const ImageText = styled.p`
   text-shadow: #000 2px 2px;
   width: 80%;
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 2.1rem;
   }
 `
 
