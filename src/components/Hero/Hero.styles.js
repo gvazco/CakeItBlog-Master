@@ -43,7 +43,7 @@ export const HeaderWrapper = styled.div`
     font-weight: 800;
     color: #fff;
     position: relative;
-    bottom: 100px;
+    bottom: 90px;
     width: 100px;
     height: 35px;
     display: block;
