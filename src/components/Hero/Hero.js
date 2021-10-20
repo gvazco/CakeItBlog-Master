@@ -9,11 +9,6 @@ import {
   FrontText,
 } from "./Hero.styles"
 
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
-
-AOS.init()
-
 const Hero = () => {
   const {
     wpPage: { ACF_HomePage: data },
