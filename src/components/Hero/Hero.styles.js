@@ -14,21 +14,11 @@ export const StyledImg = styled(GatsbyImage)`
 
 export const FrontImg = styled(GatsbyImage)`
   max-height: 950px;
-  margin-top: 18px;
-
-  @media (min-width: 1920px) {
-    right: 400px;
-    width: 110%;
-    height: 110%;
-  } ;
+  margin-top: 20px;
 `
 export const FrontText = styled(GatsbyImage)`
   max-height: 600px;
   margin-bottom: 60px;
-  @media (min-width: 1920px) {
-    width: 120%;
-    height: 120%;
-  } ;
 `
 
 export const Wrapper = styled.div`
@@ -46,9 +36,8 @@ export const HeaderWrapper = styled.div`
   width: 100%;
 
    @media (min-width: 1920px) {
-    left: 150px;
-    
-    
+    left: 100px;
+
   } ;
 
   div {

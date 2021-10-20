@@ -36,7 +36,7 @@ const Hero = () => {
         <div
           data-aos="fade-down"
           data-aos-anchor-placement="top-bottom"
-          data-aos-offset="400"
+          data-aos-offset="200"
           data-aos-duration="200"
           data-aos-easing="ease-out"
           data-aos-mirror="true"
@@ -49,7 +49,7 @@ const Hero = () => {
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-offset="360"
+          data-aos-offset="260"
           data-aos-duration="300"
           data-aos-easing="ease-out"
           data-aos-mirror="true"
