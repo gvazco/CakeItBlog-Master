@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout/Layout"
 import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 import ArchiveSidebar from "../components/ArchiveSidebar/ArchiveSidebar"
+import Pagination from "../components/Pagination/Pagination"
 
 //Component Styles
 import {
@@ -21,7 +22,7 @@ import {
 
 const archiveTemplate = ({
   data: { allWpPost },
-  pageContext: { catId, catName, catUrl, categories, numPages, currentPage },
+  pageContext: { catId, catName, catUri, categories, numPages, currentPage },
 }) => (
   <Layout>
     <StaticImage
@@ -74,6 +75,11 @@ const archiveTemplate = ({
               <div className="dot-divider" />
             </article>
           ))}
+          <Pagination
+            catUri={catUri}
+            page={currentPage}
+            totalPages={numPages}
+          />
         </PageContent>
       </ContentWrapper>
     </Wrapper>
