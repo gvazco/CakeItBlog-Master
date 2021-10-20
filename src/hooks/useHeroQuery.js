@@ -6,6 +6,22 @@ export const useHeroQuery = () => {
       wpPage(databaseId: { eq: 12 }) {
         id
         ACF_HomePage {
+          herofrontimage {
+            localFile {
+              publicURL
+              childImageSharp {
+                gatsbyImageData(width: 600, placeholder: TRACED_SVG)
+              }
+            }
+          }
+          herotextimage {
+            localFile {
+              publicURL
+              childImageSharp {
+                gatsbyImageData(width: 600, placeholder: TRACED_SVG)
+              }
+            }
+          }
           heroText
           heroImage {
             localFile {
