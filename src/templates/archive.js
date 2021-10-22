@@ -107,7 +107,7 @@ export const pageQuery = graphql`
             node {
               localFile {
                 childImageSharp {
-                  gatsbyImageData(width: 800, placeholder: DOMINANT_COLOR)
+                  gatsbyImageData(width: 800, placeholder: TRACED_SVG)
                 }
               }
             }
