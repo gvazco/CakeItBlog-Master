@@ -16,7 +16,7 @@ const LatestBlogPost = () => {
   console.log(data)
 
   return (
-    <Wrapper>
+    <Wrapper data-aos="zoom-in">
       <h1>Últimas Publicaciones</h1>
 
       <Image>

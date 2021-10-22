@@ -9,24 +9,19 @@ const CTAArea = () => {
   const { cta } = useCTAAreaQuery()
 
   const settings = {
+    infinite: true,
     dots: true,
-    infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -44,9 +39,9 @@ const CTAArea = () => {
   }
 
   return (
-    <Wrapper>
+    <Wrapper data-aos="zoom-in">
       <Slider {...settings}>
-        {new Array(3).fill("").map((element, i) => (
+        {new Array(6).fill("").map((element, i) => (
           <div>
             <CTA
               key={i}
