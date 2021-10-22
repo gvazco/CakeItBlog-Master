@@ -12,7 +12,7 @@ export const CTAImage = styled.div`
   max-height: 100px;
   position: relative;
   overflow: hidden;
-
+  margin: 0 5px;
   img {
     filter: brightness(70%);
     transition: 0.3s ease-in;

@@ -22,8 +22,8 @@ const Hero = () => {
     <Wrapper>
       <div
         data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-duration="300"
+        data-aos-offset="100"
+        data-aos-duration="200"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
         data-aos-once="false"
@@ -36,8 +36,8 @@ const Hero = () => {
         <div
           data-aos="fade-down"
           data-aos-anchor-placement="top-bottom"
-          data-aos-offset="200"
-          data-aos-duration="200"
+          data-aos-offset="320"
+          data-aos-duration="300"
           data-aos-easing="ease-out"
           data-aos-mirror="true"
           data-aos-once="false"
