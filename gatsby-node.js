@@ -2,8 +2,13 @@ const path = require("path")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
+
+  /* ------------------------------------------------------------------- */
+  /*                  Extraemos los datos desde Grapql                   */
+  /*---------------------------------------------------------------------*/
+
   const archiveTemplate = path.resolve("./src/templates/archive.js")
-  const result = await graphql(`
+  const posts = await graphql(`
     {
       wp {
         readingSettings {
@@ -25,12 +30,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   `)
 
   //Check for errors
-  if (result.errors) {
-    reporter.panicOnBuild(`Something went horrible wrong!`, result.errors)
+  if (posts.errors) {
+    reporter.panicOnBuild(`Something went horrible wrong!`, posts.errors)
     return
   }
 
-  const { wp, allWpCategory } = result.data
+  /* ------------------------------------------------------------------- */
+  /*                      Crear paginación dinámica                      */
+  /* ------------------------------------------------------------------- */
+
+  const { wp, allWpCategory } = posts.data
   //Create Pages for each category
   allWpCategory.edges.forEach(category => {
     const postsPerPage = wp.readingSettings.postsPerPage

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { useHeroQuery } from "../../hooks/useHeroQuery"
 import {
@@ -43,7 +44,9 @@ const Hero = () => {
           data-aos-once="false"
         >
           <FrontText image={frontText} alt="Hero Text" />
-          <button>Ver Más...</button>
+          <Link to="/productos/casetas-de-multypanel/">
+            <button>Ver Más...</button>
+          </Link>
         </div>
 
         <div
