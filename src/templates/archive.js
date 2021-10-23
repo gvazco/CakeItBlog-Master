@@ -91,6 +91,7 @@ export default archiveTemplate
 export const pageQuery = graphql`
   query ($catId: String!, $skip: Int!, $limit: Int!) {
     allWpPost(
+      sort: { fields: date, order: DESC }
       filter: { categories: { nodes: { elemMatch: { id: { eq: $catId } } } } }
       skip: $skip
       limit: $limit
