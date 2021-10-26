@@ -61,7 +61,9 @@ export const query = graphql`
         featuredImage {
           node {
             localFile {
-              publicURL
+              childImageSharp {
+                gatsbyImageData(width: 800, placeholder: TRACED_SVG)
+              }
             }
           }
         }

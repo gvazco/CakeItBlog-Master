@@ -91,7 +91,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           featuredImage {
             node {
               localFile {
-                publicURL
+                childImageSharp {
+                  gatsbyImageData(width: 800, placeholder: TRACED_SVG)
+                }
               }
             }
           }

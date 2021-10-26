@@ -16,7 +16,7 @@ const CTAArea = () => {
     slidesToScroll: 3,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
     responsive: [
