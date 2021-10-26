@@ -1,11 +1,19 @@
 import styled from "styled-components"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-// export const GridStyled = styled(Grid)`
-//   .productos-list__item {
-//     width: 100% !important;
-//     box-shadow: 2px 2px 5px #999 !important;
-//   }
-// `
+export const StyledImg = styled(GatsbyImage)`
+  img {
+    transition: all 0.3s !important;
+  }
+`
+export const StyledH2 = styled.h2`
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 5px;
+  :hover {
+    color: #ee2562;
+  }
+`
 
 export const Grid = styled.div`
   display: grid;
@@ -19,6 +27,12 @@ export const Grid = styled.div`
 @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .productos-list__item {
+     width: 100% !important;
+     box-shadow: 3px 3px 5px #999 !important;
+     padding:5px;
+   }
 `
 
 export const Wrap = styled.div`
