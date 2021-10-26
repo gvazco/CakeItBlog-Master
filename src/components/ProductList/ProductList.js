@@ -3,7 +3,6 @@ import { Grid, Card, Icon, Image, Button } from "semantic-ui-react"
 import { Link } from "gatsby"
 import { map } from "lodash"
 import { Wrap, GridStyled } from "./productsList.styles"
-import "semantic-ui-css/semantic.min.css"
 
 export default function ProductList(props) {
   const { productos } = props
