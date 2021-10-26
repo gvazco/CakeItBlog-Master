@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 //Components
 import Layout from "../components/Layout/Layout"
 import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
-import ProductList from "../components/ProductList"
+import ProductList from "../components/ProductList/ProductList"
 import ProductsSidebar from "../components/ProductsSidebar/ProductsSidebar"
 
 //Component Styles
