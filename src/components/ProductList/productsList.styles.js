@@ -1,10 +1,23 @@
 import styled from "styled-components"
-import { Grid } from "semantic-ui-react"
 
-export const GridStyled = styled(Grid)`
-  .productos-list__item {
-    width: 100% !important;
-    box-shadow: 2px 2px 5px #999 !important;
+// export const GridStyled = styled(Grid)`
+//   .productos-list__item {
+//     width: 100% !important;
+//     box-shadow: 2px 2px 5px #999 !important;
+//   }
+// `
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px; */
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 20px;
+
+@media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `
 

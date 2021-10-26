@@ -1,16 +1,16 @@
-import React from "react"
-import { Grid, Card, Icon, Image, Button } from "semantic-ui-react"
+import React, { useEffect } from "react"
+import { Card, Icon, Image, Button } from "semantic-ui-react"
 import { Link } from "gatsby"
 import { map } from "lodash"
-import { Wrap, GridStyled } from "./productsList.styles"
+import { Wrap, Grid } from "./productsList.styles"
 
 export default function ProductList(props) {
   const { productos } = props
 
   return (
-    <GridStyled className="productos-list">
+    <Grid className="productos-list">
       {map(productos, producto => (
-        <Grid.Column key={producto.id} mobile={16} tablet={16} computer={5}>
+        <div key={producto.id}>
           <Card className="productos-list__item">
             <Link to={`/productos/${producto.slug}`}>
               <Image src={producto.featuredImage.node.localFile.publicURL} />
@@ -28,8 +28,8 @@ export default function ProductList(props) {
               </Wrap>
             </Card.Content>
           </Card>
-        </Grid.Column>
+        </div>
       ))}
-    </GridStyled>
+    </Grid>
   )
 }
