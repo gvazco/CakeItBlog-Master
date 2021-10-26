@@ -1,4 +1,5 @@
 const path = require("path")
+const { paginate } = require("gatsby-awesome-pagination")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -76,6 +77,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   `)
 
+  //Archivo Productos
+  const productos = await graphql(`
+    query {
+      allWpProducto {
+        nodes {
+          title
+          uri
+          slug
+          id
+          content
+          excerpt
+          featuredImage {
+            node {
+              localFile {
+                publicURL
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   //Check for errors
   if (posts.errors) {
     reporter.panicOnBuild(`Something went horrible wrong!`, posts.errors)
@@ -89,6 +113,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (fichas.errors) {
     reporter.panicOnBuild(`Something went horrible wrong!`, fichas.errors)
+    return
+  }
+
+  if (productos.errors) {
+    reporter.panicOnBuild("Something wnt horrible wrong!", productos.errors)
     return
   }
 
@@ -185,4 +214,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     }
   })
+
+  //Paginate Productos
+  paginate({
+    createPage, // The Gatsby `createPage` function
+    items: productos.data.allWpProducto.nodes, // An array of objects
+    itemsPerPage: 6, // How many items you want per page
+    pathPrefix: "/productos", // Creates pages like `/blog`, `/blog/2`, etc
+    component: path.resolve(`src/templates/productos.js`), // Just like `createPage()`
+  })
+
+  /* ----------------------------------------------------------------- */
+  /*                    Crear ruta de pagina interna                   */
+  /* ----------------------------------------------------------------- */
 }
