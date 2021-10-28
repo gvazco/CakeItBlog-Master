@@ -101,6 +101,7 @@ export default archiveProyectos
 export const pageQuery = graphql`
   query ($catId: String!, $skip: Int!, $limit: Int!) {
     allWpProyecto(
+      sort: { fields: date, order: DESC }
       filter: {
         categoriasProyectos: { nodes: { elemMatch: { id: { eq: $catId } } } }
       }

@@ -8,7 +8,7 @@ export const StyledImg = styled(GatsbyImage)`
 `
 export const StyledH2 = styled.h2`
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 5px;
   :hover {
     color: #ee2562;

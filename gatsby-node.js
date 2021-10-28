@@ -229,4 +229,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   /* ----------------------------------------------------------------- */
   /*                    Crear ruta de pagina interna                   */
   /* ----------------------------------------------------------------- */
+
+  productos.data.allWpProducto.nodes.forEach(producto => {
+    createPage({
+      path: `/productos/${producto.slug}`,
+      component: path.resolve(`src/templates/producto/producto.js`),
+      context: {
+        data: producto,
+      },
+    })
+  })
 }

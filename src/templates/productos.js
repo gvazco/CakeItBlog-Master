@@ -12,7 +12,7 @@ import ProductsSidebar from "../components/ProductsSidebar/ProductsSidebar"
 import { Wrapper, ContentWrapper, PageContent } from "./archive.styles"
 
 export default function Productos(props) {
-  const { data } = props
+  const { data, pageContext } = props
   const productos = data.allWpProducto.nodes
 
   return (
