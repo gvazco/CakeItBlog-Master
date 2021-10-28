@@ -40,10 +40,10 @@ const CTAArea = () => {
   return (
     <Wrapper data-aos="zoom-in">
       <Slider {...settings}>
-        {new Array(6).fill("").map((element, i) => (
+        {new Array(5).fill("").map((element, i) => (
           <div>
             <CTA
-              key={`cta${i + 1}`}
+              key={i}
               image={
                 cta.ACF_HomePage[`cta${i + 1}Image`].localFile.childImageSharp
                   .gatsbyImageData

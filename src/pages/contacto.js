@@ -21,24 +21,27 @@ const ContentWrapper = styled.div`
 `
 
 const PageContent = styled.article`
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 50px;
+
   width: 100%;
+
+  @media (min-width: 992px) {
+    margin-left: 20px;
+  }
 
   .contact {
     background-color: #221e3f;
   }
 
   form {
-    width: 70%;
+    width: 100%;
     margin: 0px auto;
   }
 
   form label {
     font-size: 1.2rem;
   }
-
-  form h1 {
+  e form h1 {
     text-align: center;
   }
 
@@ -100,7 +103,7 @@ const PageContent = styled.article`
 	}*/
 
   .formulariowtsp {
-    width: 70%;
+    width: 90%;
     margin: 50px auto;
     border-radius: 5px;
     position: relative;
@@ -158,8 +161,7 @@ const PageContent = styled.article`
   .btnwtsp {
     position: relative;
     display: inline-block;
-    left: 25%;
-    width: 50%;
+    width: 100%;
     border: none;
     padding: 12px 36px;
     letter-spacing: 2px;
@@ -204,7 +206,7 @@ export default function contacto() {
   return (
     <Layout id="contact">
       <StaticImage
-        src="../../images/archive_headerimage.png"
+        src="../images/archive_headerimage.png"
         placeholder="TRACED_SVG"
         layout="constrained"
         width={1920}
@@ -212,15 +214,19 @@ export default function contacto() {
         alt="Blog Image Post"
       />
       <Wrapper>
-        <BreadCrumb />
+        <BreadCrumb
+          parent={{
+            uri: "/contacto",
+            title: "envía un mensaje por WhatsApp",
+          }}
+        />
 
         <ContentWrapper>
           <Sidebar />
+
           <PageContent id="contact">
-            <form id="formulariowtsp" action="" class="formulariowtsp">
-              <h1>
-                <span>Estamos a tu alcance</span>
-              </h1>
+            <form id="formulariowtsp" action="" className="formulariowtsp">
+              <h1>Estamos a tu alcance</h1>
               <fieldset>
                 <a
                   style={{ display: "none" }}
@@ -228,6 +234,7 @@ export default function contacto() {
                 >
                   Envia un mensaje via WhatsApp
                 </a>
+
                 <div>
                   <label htmlFor="contactName">
                     Nombre <span className="required">*</span>
@@ -268,8 +275,8 @@ export default function contacto() {
                 </div>
 
                 <div>
-                  <button type="submit" id="sendbttn" class="btnwtsp">
-                    <i class="fab fa-whatsapp" id="icon-wts"></i> ENVIAR
+                  <button type="submit" id="sendbttn" className="btnwtsp">
+                    <i className="fab fa-whatsapp" id="icon-wts"></i> ENVIAR
                   </button>
                 </div>
               </fieldset>

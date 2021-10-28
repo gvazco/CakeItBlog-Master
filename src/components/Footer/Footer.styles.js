@@ -12,6 +12,7 @@ export const Credits = styled.div`
 export const StyledH2 = styled.h2`
   font-weight: 500;
   font-size: 1.5rem;
+  font-family: "Teko", Arial, Helvetica, sans-serif;
 `
 export const Wrapper = styled.footer`
   display: flex;
@@ -26,12 +27,13 @@ export const Wrapper = styled.footer`
   p {
     margin: 0;
     padding: 0;
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
   }
 
   
 
   .listing {
-  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  
   list-style:none;
   display: grid;
   grid-template-columns: 1fr;
@@ -41,8 +43,10 @@ export const Wrapper = styled.footer`
   padding: 0 25px;
   text-align: center;
 
-    li li{
+    li > p {
     font-size:20px;
+    color:#fff;
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
       a{
         color:#fff;
         :hover {

@@ -23,7 +23,7 @@ const PostContent = styled.article`
   margin-top: 20px;
 `
 
-const PostTemplate = () => (
+const PostTemplate = ({ data }) => (
   <Layout>
     <Wrapper>
       <BreadCrumb parent={{ uri: "/blog/all-posts", title: "blog" }} />
@@ -50,7 +50,15 @@ export const PageQuery = graphql`
           name
         }
       }
-      date(formatString: "")
+      date(formatString: "DD MM YYYY")
+      categories {
+        nodes {
+          id
+          name
+          uri
+          slug
+        }
+      }
     }
   }
 `

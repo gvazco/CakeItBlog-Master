@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-family: "Teko", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  margin: 0 0 20px 0;
+  margin: 0 0 5em 0;
 
   p {
     font-weight: 400;
@@ -32,4 +32,4 @@ export const Wrapper = styled.div`
       text-transform: uppercase;
     }
   }
-`;
+`
