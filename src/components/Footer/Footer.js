@@ -8,51 +8,51 @@ const Footer = () => (
       <ul className="listing">
         <li className="menu">
           <StyledH2>Menu:</StyledH2>
-          <li>
+          <p>
             <Link to="/">Inicio</Link>
-          </li>
-          <li>
+          </p>
+          <p>
             <Link to="/productos">Productos</Link>
-          </li>
-          <li>
+          </p>
+          <p>
             <Link to="/galeria/all-proyects/">Galería</Link>
-          </li>
-          <li>
+          </p>
+          <p>
             <Link to="/fichas_tecnicas/all-fichas/">Fichas</Link>
-          </li>
-          <li>
+          </p>
+          <p>
             <Link to="/blog/all-posts/">Blog</Link>
-          </li>
-          <li>
+          </p>
+          <p>
             <Link to="/contacto">Contacto</Link>
-          </li>
+          </p>
         </li>
-        <li>
+        <p>
           <StyledH2>Encuéntranos en:</StyledH2>
           <span>Dirección: </span>
-          <li>
+          <p>
             Hipodromo No. 11 Col. San Miguel Xochimanga, C.P. 52927 - Atizapán
             de Zaragoza, EdoMéx.
-          </li>
+          </p>
           <span>Teléfonos: </span>
-          <li>55.5887.3716 // 55.5887.3717</li>
+          <p>55.5887.3716 // 55.5887.3717</p>
           <span>Email: </span>
-          <li>ventas@multycasetas.com</li>
-        </li>
+          <p>ventas@multycasetas.com</p>
+        </p>
         <li className="redes">
           <StyledH2>Siguenos en Redes:</StyledH2>
-          <li>
+          <p>
             <a href="/">Facebook</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="/">Instagram</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="/">Twitter</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="/">Youtube</a>
-          </li>
+          </p>
         </li>
       </ul>
     </Wrapper>

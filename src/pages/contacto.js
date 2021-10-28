@@ -1,8 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import { StaticImage } from "gatsby-plugin-image"
 //Components
 import Layout from "../components/Layout/Layout"
 import Sidebar from "../components/SidebarMessage/SidebarMessage"
+import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 
 const Wrapper = styled.div`
   max-width: 1180px;
@@ -19,21 +21,28 @@ const ContentWrapper = styled.div`
 `
 
 const PageContent = styled.article`
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 50px;
+
   width: 100%;
+
+  @media (min-width: 992px) {
+    margin-left: 20px;
+  }
 
   .contact {
     background-color: #221e3f;
   }
 
   form {
-    width: 70%;
+    width: 100%;
     margin: 0px auto;
   }
 
   form label {
     font-size: 1.2rem;
+  }
+  e form h1 {
+    text-align: center;
   }
 
   input,
@@ -94,7 +103,7 @@ const PageContent = styled.article`
 	}*/
 
   .formulariowtsp {
-    width: 70%;
+    width: 90%;
     margin: 50px auto;
     border-radius: 5px;
     position: relative;
@@ -110,7 +119,7 @@ const PageContent = styled.article`
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-family: arial;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
     font-size: 13px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.19);
@@ -128,7 +137,7 @@ const PageContent = styled.article`
     height: 140px;
     max-height: 140px;
     min-height: 140px;
-    font-family: arial;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
     font-size: 13px;
     border-radius: 5px;
     padding: 5px;
@@ -141,7 +150,7 @@ const PageContent = styled.article`
   }
 
   .newmessagewts {
-    font-family: arial;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
     display: block;
     text-align: center;
     width: 100%;
@@ -152,15 +161,15 @@ const PageContent = styled.article`
   .btnwtsp {
     position: relative;
     display: inline-block;
-    left: 25%;
-    width: 50%;
+    width: 100%;
     border: none;
     padding: 12px 36px;
     letter-spacing: 2px;
     margin-top: 10px;
     color: white;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
 
     animation: pulse 3s infinite;
 
@@ -177,38 +186,6 @@ const PageContent = styled.article`
   }
 
   /*End contact*/
-
-  /*Start footer*/
-  .copyright {
-    width: 100%;
-    text-align: center;
-    background-color: #16162d;
-    padding: 2rem 0;
-    position: relative;
-  }
-  .up {
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    background-color: #eee;
-    top: -2.5rem;
-    right: 5rem;
-    border-radius: 100%;
-    display: flex;
-    animation: pulse 2s infinite;
-    cursor: pointer;
-  }
-
-  .up i {
-    color: #16162d;
-    font-size: 2rem;
-    margin: auto;
-  }
-
-  .copyrigth p {
-    font-size: 1.4rem;
-  }
-  /*End footer*/
 
   /*Start animations*/
   @keyframes pulse {
@@ -228,15 +205,28 @@ const PageContent = styled.article`
 export default function contacto() {
   return (
     <Layout id="contact">
+      <StaticImage
+        src="../images/archive_headerimage.png"
+        placeholder="TRACED_SVG"
+        layout="constrained"
+        width={1920}
+        height={300}
+        alt="Blog Image Post"
+      />
       <Wrapper>
-        <h1>
-          <span>Estamos a tu alcance</span>
-        </h1>
+        <BreadCrumb
+          parent={{
+            uri: "/contacto",
+            title: "envía un mensaje por WhatsApp",
+          }}
+        />
 
         <ContentWrapper>
           <Sidebar />
+
           <PageContent id="contact">
-            <form id="formulariowtsp" action="" class="formulariowtsp">
+            <form id="formulariowtsp" action="" className="formulariowtsp">
+              <h1>Estamos a tu alcance</h1>
               <fieldset>
                 <a
                   style={{ display: "none" }}
@@ -244,6 +234,7 @@ export default function contacto() {
                 >
                   Envia un mensaje via WhatsApp
                 </a>
+
                 <div>
                   <label htmlFor="contactName">
                     Nombre <span className="required">*</span>
@@ -284,8 +275,8 @@ export default function contacto() {
                 </div>
 
                 <div>
-                  <button type="submit" id="sendbttn" class="btnwtsp">
-                    <i class="fab fa-whatsapp" id="icon-wts"></i> ENVIAR
+                  <button type="submit" id="sendbttn" className="btnwtsp">
+                    <i className="fab fa-whatsapp" id="icon-wts"></i> ENVIAR
                   </button>
                 </div>
               </fieldset>

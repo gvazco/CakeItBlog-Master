@@ -25,7 +25,6 @@ const CTAArea = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
@@ -41,7 +40,7 @@ const CTAArea = () => {
   return (
     <Wrapper data-aos="zoom-in">
       <Slider {...settings}>
-        {new Array(6).fill("").map((element, i) => (
+        {new Array(5).fill("").map((element, i) => (
           <div>
             <CTA
               key={i}
