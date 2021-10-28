@@ -18,7 +18,7 @@ export const Wrapper = styled.footer`
   align-items: center;
   flex-direction: row;
   justify-align: space-between;
-  background: #212121;
+  background: linear-gradient(180deg, #4d4d4d, #0c0c0c);
   color: #fff;
   max-height: 1350px;
   padding: 50px 0;

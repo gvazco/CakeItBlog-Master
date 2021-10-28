@@ -1,8 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import { StaticImage } from "gatsby-plugin-image"
 //Components
 import Layout from "../components/Layout/Layout"
 import Sidebar from "../components/SidebarMessage/SidebarMessage"
+import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 
 const Wrapper = styled.div`
   max-width: 1180px;
@@ -34,6 +36,10 @@ const PageContent = styled.article`
 
   form label {
     font-size: 1.2rem;
+  }
+
+  form h1 {
+    text-align: center;
   }
 
   input,
@@ -197,15 +203,24 @@ const PageContent = styled.article`
 export default function contacto() {
   return (
     <Layout id="contact">
+      <StaticImage
+        src="../../images/archive_headerimage.png"
+        placeholder="TRACED_SVG"
+        layout="constrained"
+        width={1920}
+        height={300}
+        alt="Blog Image Post"
+      />
       <Wrapper>
-        <h1>
-          <span>Estamos a tu alcance</span>
-        </h1>
+        <BreadCrumb />
 
         <ContentWrapper>
           <Sidebar />
           <PageContent id="contact">
             <form id="formulariowtsp" action="" class="formulariowtsp">
+              <h1>
+                <span>Estamos a tu alcance</span>
+              </h1>
               <fieldset>
                 <a
                   style={{ display: "none" }}
