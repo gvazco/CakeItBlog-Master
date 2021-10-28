@@ -43,7 +43,7 @@ const CTAArea = () => {
         {new Array(6).fill("").map((element, i) => (
           <div>
             <CTA
-              key={i}
+              key={`cta${i + 1}`}
               image={
                 cta.ACF_HomePage[`cta${i + 1}Image`].localFile.childImageSharp
                   .gatsbyImageData
