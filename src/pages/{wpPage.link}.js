@@ -6,6 +6,7 @@ import Layout from "../components/Layout/Layout"
 import PageHero from "../components/PageHero/PageHero"
 import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 import PageSidebar from "../components/PageSidebar/PageSideBar"
+import TransformOembedToIframe from "../utils/TransformOembedToIframe"
 
 const Wrapper = styled.div`
   max-width: 1180px;
@@ -51,7 +52,12 @@ const PageTemplate = ({ data }) => (
 
         <PageContent>
           <h1 dangerouslySetInnerHTML={{ __html: data.wpPage.title }} />
-          <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
+
+          <div
+            dangerouslySetInnerHTML={{
+              __html: TransformOembedToIframe(data.wpPage.content),
+            }}
+          />
         </PageContent>
       </ContentWrapper>
     </Wrapper>
