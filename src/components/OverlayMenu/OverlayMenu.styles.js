@@ -39,7 +39,7 @@ export const Overlay = styled.div`
       }
 
       li.overlayActive {
-        color: #ee2562;
+        color: #f26e3b;
       }
 
       a {
@@ -50,7 +50,7 @@ export const Overlay = styled.div`
         text-decoration: none;
 
         :hover {
-          color: #ee2562;
+          color: #f26e3b;
         }
       }
     }

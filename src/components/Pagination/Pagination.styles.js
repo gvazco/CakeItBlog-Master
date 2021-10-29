@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Wrapper = styled.nav`
   display: flex;
   justify-content: space-between;
 
   .navBack {
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 800;
     color: #fff;
@@ -24,7 +24,7 @@ export const Wrapper = styled.nav`
       top: 50%;
       margin: 0;
       border: solid;
-      content: '';
+      content: "";
       pointer-events: none;
       border-right-color: #000;
       border-width: 15px;
@@ -32,16 +32,16 @@ export const Wrapper = styled.nav`
     }
 
     :hover {
-      background: #ee2562;
+      background: #f26e3b;
     }
 
     :hover:before {
-      border-right-color: #ee2562;
+      border-right-color: #f26e3b;
     }
   }
 
   .navForward {
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-family: "Teko", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 800;
     color: #fff;
@@ -61,7 +61,7 @@ export const Wrapper = styled.nav`
       top: 50%;
       margin: 0;
       border: solid;
-      content: '';
+      content: "";
       pointer-events: none;
       border-left-color: #000;
       border-width: 15px;
@@ -69,11 +69,11 @@ export const Wrapper = styled.nav`
     }
 
     :hover {
-      background: #ee2562;
+      background: #f26e3b;
     }
 
     :hover:after {
-      border-left-color: #ee2562;
+      border-left-color: #f26e3b;
     }
   }
-`;
+`

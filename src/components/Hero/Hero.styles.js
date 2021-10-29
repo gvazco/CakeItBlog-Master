@@ -87,11 +87,11 @@ export const HeaderWrapper = styled.div`
     }
 
     :hover {
-      background: #ee2562;
+      background: #f26e3b;
     }
 
     :hover:after {
-      border-left-color: #ee2562;
+      border-left-color: #f26e3b;
     
     
     

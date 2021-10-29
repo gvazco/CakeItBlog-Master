@@ -4,8 +4,7 @@ export const Credits = styled.div`
   color: #fff;
   background: #0c0c0c;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding: 20px 10px 30px 10px;
   font-family: "Teko", Arial, Helvetica, sans-serif;
 `
 
@@ -23,6 +22,10 @@ export const Wrapper = styled.footer`
   color: #fff;
   max-height: 1350px;
   padding: 50px 0;
+
+  @media screen and (min-width: 992px) {
+      padding: 120px 0;
+    }
 
   p {
     margin: 0;
@@ -43,18 +46,40 @@ export const Wrapper = styled.footer`
   padding: 0 25px;
   text-align: center;
 
+  
+  li.menu{
+    p{
+      line-height: 35px;
+    }
+  }
+
     li > p {
+      
     font-size:20px;
     color:#fff;
     font-family: 'Teko', Arial, Helvetica, sans-serif;
       a{
+        
+        
+x;
         color:#fff;
         :hover {
-        color: #ee2562;
+        color: #f26e3b;
         }
       }
     }
 
+    a > img{
+          width:18px;
+          position: relative;
+          top:4px;
+          filter: invert(100%);
+          margin:12px 3px 0 0;
+          :hover{
+            filter: invert(56%) sepia(81%) saturate(2559%) hue-rotate(337deg) brightness(99%) contrast(92%);
+            
+          }
+        }
     
 
     span {
