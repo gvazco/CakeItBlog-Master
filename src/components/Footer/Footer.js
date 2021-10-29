@@ -42,16 +42,21 @@ const Footer = () => (
         <li className="redes">
           <StyledH2>Siguenos en Redes:</StyledH2>
           <p>
-            <a href="/">Facebook</a>
+            <a href="https://www.facebook.com/MultyCasetasLaminas">Facebook</a>
           </p>
           <p>
-            <a href="/">Instagram</a>
+            <a href="https://instagram.com/multycasetas">Instagram</a>
           </p>
           <p>
-            <a href="/">Twitter</a>
+            <a href="https://twitter.com/MultyCasetas">Twitter</a>
           </p>
           <p>
-            <a href="/">Youtube</a>
+            <a href="https://www.youtube.com/user/CasetasPrefabricadas">
+              Youtube
+            </a>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/company/multycasetas">Linkedin</a>
           </p>
         </li>
       </ul>
