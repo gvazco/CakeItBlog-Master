@@ -27,21 +27,21 @@ const PostContent = styled.article`
   max-width: 800px;
 `
 
-const PostTemplate = ({ data }) => (
+const ProyectTemplate = ({ data }) => (
   <Layout>
     <Wrapper>
-      <BreadCrumb parent={{ uri: "/blog/all-posts", title: "blog" }} />
+      <BreadCrumb parent={{ uri: "/galeria/all-proyects", title: "galería" }} />
       <ContentWrapper>
         <PostSidebar
-          date={data.post.date}
-          author={data.post.author.node.name}
-          categories={data.post.categories.nodes}
+          date={data.item.date}
+          author={data.item.author.node.name}
+          categories={data.item.categoriasProyectos.nodes}
         />
         <PostContent>
-          <h1 dangerouslySetInnerHTML={{ __html: data.post.title }} />
+          <h1 dangerouslySetInnerHTML={{ __html: data.item.title }} />
           <div
             dangerouslySetInnerHTML={{
-              __html: TransformOembedToIframe(data.post.content),
+              __html: TransformOembedToIframe(data.item.content),
             }}
           />
         </PostContent>
@@ -50,11 +50,11 @@ const PostTemplate = ({ data }) => (
   </Layout>
 )
 
-export default PostTemplate
+export default ProyectTemplate
 
 export const PageQuery = graphql`
   query ($id: String!) {
-    post: wpPost(id: { eq: $id }) {
+    item: wpProyecto(id: { eq: $id }) {
       title
       content
       author {
@@ -63,7 +63,7 @@ export const PageQuery = graphql`
         }
       }
       date(formatString: "DD MM YYYY")
-      categories {
+      categoriasProyectos {
         nodes {
           id
           name

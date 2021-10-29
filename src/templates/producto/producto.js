@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 //Components
 import Layout from "../../components/Layout/Layout"
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb"
-import SidebarMessage from "../../components/SidebarMessage/SidebarMessage"
+import ProductsSidebar from "../../components/ProductsSidebar/ProductsSidebar"
 import TransformOembedToIframe from "../../utils/TransformOembedToIframe"
 
 //Component Styles
@@ -13,9 +13,6 @@ import {
   Wrapper,
   ContentWrapper,
   PageContent,
-  StyledH2,
-  StyledDate,
-  StyledReadMore,
   Image,
   StyledImg,
 } from "./producto.styles"
@@ -42,7 +39,7 @@ export default function producto(props) {
           }}
         />
         <ContentWrapper>
-          <SidebarMessage />
+          <ProductsSidebar />
           <PageContent>
             <h1 dangerouslySetInnerHTML={{ __html: producto.title }} />
             <article>
