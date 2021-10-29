@@ -12,7 +12,7 @@ const PostSidebar = ({ date, author, categories }) => (
         <span>{author}</span>
       </li>
       <li className="sidebar-section">
-        <span>Categories</span>
+        <span>Categorías</span>
       </li>
       {categories.map(cat =>
         cat.slug !== "all-post" ? (

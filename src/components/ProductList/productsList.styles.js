@@ -11,7 +11,7 @@ export const StyledH2 = styled.h2`
   font-size: 1.3rem;
   padding: 5px;
   :hover {
-    color: #ee2562;
+    color: #f26e3b;
   }
 `
 

@@ -60,7 +60,7 @@ export const StyledH2 = styled.h2`
   font-weight: 500;
   font-size: 1.8rem;
   :hover {
-    color: #ee2562;
+    color: #f26e3b;
   }
 `
 
@@ -98,10 +98,10 @@ export const StyledReadMore = styled(Link)`
   }
 
   :hover {
-    background: #ee2562;
+    background: #f26e3b;
   }
 
   :hover:after {
-    border-left-color: #ee2562;
+    border-left-color: #f26e3b;
   }
 `
