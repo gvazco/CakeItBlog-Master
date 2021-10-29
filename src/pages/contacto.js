@@ -170,9 +170,7 @@ const PageContent = styled.article`
     cursor: pointer;
     font-size: 1.5rem;
     font-family: "Teko", Arial, Helvetica, sans-serif;
-
     animation: pulse 3s infinite;
-
     border-radius: 40px;
     background: linear-gradient(90deg, #f26e3b, #d22e26);
   }

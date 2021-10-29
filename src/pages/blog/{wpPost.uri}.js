@@ -4,6 +4,9 @@ import styled from "styled-components"
 //Components
 import Layout from "../../components/Layout/Layout"
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb"
+import PostSidebar from "../../components/PostSidebar/PostSidebar"
+//Utils
+import TransformOembedToIframe from "../../utils/TransformOembedToIframe"
 
 const Wrapper = styled.div`
   max-width: 1180px;
@@ -28,10 +31,18 @@ const PostTemplate = ({ data }) => (
     <Wrapper>
       <BreadCrumb parent={{ uri: "/blog/all-posts", title: "blog" }} />
       <ContentWrapper>
-        Sidebar Goes here
+        <PostSidebar
+          date={data.post.date}
+          author={data.post.author.node.name}
+          categories={data.post.categories.nodes}
+        />
         <PostContent>
-          <h1>Header</h1>
-          <div>Content</div>
+          <h1 dangerouslySetInnerHTML={{ __html: data.post.title }} />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: TransformOembedToIframe(data.post.content),
+            }}
+          />
         </PostContent>
       </ContentWrapper>
     </Wrapper>
