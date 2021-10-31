@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const HamburgerButton = styled.div`
   img {
@@ -11,6 +11,8 @@ export const HamburgerButton = styled.div`
     height: 40px;
     cursor: pointer;
     transition: all 0.2s ease;
+    filter: invert(56%) sepia(81%) saturate(2559%) hue-rotate(337deg)
+      brightness(99%) contrast(92%);
 
     :hover {
       transform: scale(1.2);
@@ -20,4 +22,4 @@ export const HamburgerButton = styled.div`
       display: none;
     }
   }
-`;
+`
