@@ -17,6 +17,7 @@ export const Content = styled.div`
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: white;
 
   img {
     width: 120px;
