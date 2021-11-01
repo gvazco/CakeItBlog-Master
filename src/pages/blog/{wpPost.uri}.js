@@ -25,6 +25,10 @@ const ContentWrapper = styled.div`
 const PostContent = styled.article`
   margin-top: 20px;
   max-width: 800px;
+
+  iframe {
+    width: 100%;
+  }
 `
 
 const PostTemplate = ({ data }) => (

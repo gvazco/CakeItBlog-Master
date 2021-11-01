@@ -44,6 +44,6 @@ export const Wrap = styled.div`
     max-height: 100px;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    font-size: 20px;
+    font-size: 18px;
   }
 `
