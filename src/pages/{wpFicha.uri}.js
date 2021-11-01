@@ -2,11 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 //Components
-import Layout from "../../components/Layout/Layout"
-import BreadCrumb from "../../components/BreadCrumb/BreadCrumb"
-import PostSidebar from "../../components/PostSidebar/PostSidebar"
+import Layout from "../components/Layout/Layout"
+import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
+import PostSidebar from "../components/PostSidebar/PostSidebar"
 //Utils
-import TransformOembedToIframe from "../../utils/TransformOembedToIframe"
+import TransformOembedToIframe from "../utils/TransformOembedToIframe"
 
 const Wrapper = styled.div`
   max-width: 1180px;
@@ -25,6 +25,10 @@ const ContentWrapper = styled.div`
 const PostContent = styled.article`
   margin-top: 20px;
   max-width: 800px;
+
+  iframe {
+    width: 100%;
+  }
 `
 
 const FichaTemplate = ({ data }) => (

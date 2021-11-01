@@ -47,6 +47,11 @@ export const ContentWrapper = styled.div`
 
 export const PageContent = styled.article`
   margin: 20px 0 0 0;
+  max-width: 800px;
+
+  iframe {
+    width: 100%;
+  }
 
   .dot-divider {
     width: 100%;

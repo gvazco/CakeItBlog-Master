@@ -58,7 +58,7 @@ const archiveProyectos = ({
             <article key={proyect.node.id} className="entry-content">
               {proyect.node.featuredImage !== null ? (
                 <Image>
-                  <Link to={`/proyecto${proyect.node.uri}`}>
+                  <Link to={proyect.node.uri}>
                     <StyledImg
                       image={
                         proyect.node.featuredImage.node.localFile
@@ -69,7 +69,7 @@ const archiveProyectos = ({
                   </Link>
                 </Image>
               ) : null}
-              <Link to={`/proyecto${proyect.node.uri}`}>
+              <Link to={proyect.node.uri}>
                 <StyledH2
                   dangerouslySetInnerHTML={{ __html: proyect.node.title }}
                 />
@@ -79,9 +79,7 @@ const archiveProyectos = ({
                 dangerouslySetInnerHTML={{ __html: proyect.node.date }}
               />
               <p dangerouslySetInnerHTML={{ __html: proyect.node.excerpt }} />
-              <StyledReadMore to={`/proyecto${proyect.node.uri}`}>
-                Leer más...
-              </StyledReadMore>
+              <StyledReadMore to={proyect.node.uri}>Leer más...</StyledReadMore>
               <div className="dot-divider" />
             </article>
           ))}

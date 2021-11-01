@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.header`
-  background: #fdf3fa;
+  background-color: white;
   height: 110px;
   border-bottom: 1px solid #e7e7e7;
   position: fixed;
@@ -17,7 +17,6 @@ export const Content = styled.div`
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: white;
 
   img {
     width: 120px;

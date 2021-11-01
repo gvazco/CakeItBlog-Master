@@ -48,7 +48,7 @@ const archiveFichas = ({
             <article key={ficha.node.id} className="entry-content">
               {ficha.node.featuredImage !== null ? (
                 <Image>
-                  <Link to={`/ficha${ficha.node.uri}`}>
+                  <Link to={ficha.node.uri}>
                     <StyledImg
                       image={
                         ficha.node.featuredImage.node.localFile.childImageSharp
@@ -59,7 +59,7 @@ const archiveFichas = ({
                   </Link>
                 </Image>
               ) : null}
-              <Link to={`/ficha${ficha.node.uri}`}>
+              <Link to={ficha.node.uri}>
                 <StyledH2
                   dangerouslySetInnerHTML={{ __html: ficha.node.title }}
                 />
@@ -69,9 +69,7 @@ const archiveFichas = ({
                 dangerouslySetInnerHTML={{ __html: ficha.node.date }}
               />
               <p dangerouslySetInnerHTML={{ __html: ficha.node.excerpt }} />
-              <StyledReadMore to={`/ficha${ficha.node.uri}`}>
-                Leer más...
-              </StyledReadMore>
+              <StyledReadMore to={ficha.node.uri}>Leer más...</StyledReadMore>
               <div className="dot-divider" />
             </article>
           ))}

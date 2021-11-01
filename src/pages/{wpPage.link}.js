@@ -24,6 +24,11 @@ const ContentWrapper = styled.div`
 
 const PageContent = styled.article`
   margin-top: 20px;
+  max-width: 800px;
+
+  iframe {
+    width: 100%;
+  }
 `
 
 const PageTemplate = ({ data }) => (
