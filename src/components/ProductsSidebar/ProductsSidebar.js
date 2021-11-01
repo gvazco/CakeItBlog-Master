@@ -38,7 +38,7 @@ const ProductsSidebar = () => {
         </li>
         <li>
           <Link
-            to="/productos/techos-prefafricados"
+            to="/productos/techos-prefabricados"
             activeClassName="sidebar-highlighted"
           >
             <span>Techos y Cubiertas</span>

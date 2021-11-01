@@ -27,7 +27,7 @@ const LatestBlogPost = () => {
           }
           alt="Blog Image"
         />
-        <Link to={data.allWpPost.edges[0].node.uri}>
+        <Link to={`/blog${data.allWpPost.edges[0].node.uri}`}>
           <ImageTextWrapper>
             <ImageText>{data.allWpPost.edges[0].node.title}</ImageText>
           </ImageTextWrapper>
