@@ -6,15 +6,20 @@ const SidebarMessage = () => (
   <Wrapper>
     <div>
       <img src={tangoMail} alt="cakeit-mail" />
-      <span>Mail list</span>
+      <span>Escríbenos:</span>
     </div>
     <p>
-      Do you want to get updated when we publish new stuff?
+      ¿Necesitas una cotización?
       <br />
-      Just email us with your name and email adress
+      O sólo quieres mantenerte informado de nuestras actualizaciones y
+      novedades...
       <br />
       <br />
-      <a href="mailto:info@cakeitfakeit.com">Email</a>
+      Envíanos un correo con tu nombre:
+      <br />
+      <button>
+        <a href="mailto:ventas@multycasetas.com">Enviár E-Mail</a>
+      </button>
     </p>
   </Wrapper>
 )
