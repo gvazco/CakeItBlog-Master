@@ -15,7 +15,7 @@ export const Image = styled.div`
   overflow: hidden;
 
   img {
-    filter: brightness(70%);
+    filter: brightness(90%);
     transition: 0.3s ease-in;
   }
 
