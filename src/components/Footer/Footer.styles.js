@@ -59,9 +59,6 @@ export const Wrapper = styled.footer`
     color:#fff;
     font-family: 'Teko', Arial, Helvetica, sans-serif;
       a{
-        
-        
-x;
         color:#fff;
         :hover {
         color: #f26e3b;
