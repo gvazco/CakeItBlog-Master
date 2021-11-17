@@ -82,7 +82,7 @@ const Footer = () => (
     </Wrapper>
     <Credits>
       2022 © Multycasetas y Láminas | Todos los derechos reservados. Sitio
-      Creado por:
+      Creado por:{" "}
       <a href="https://disturbioilustrativo.com">Disturbio Ilustrativo</a>
     </Credits>
   </>
