@@ -1,5 +1,4 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 //Components
@@ -9,13 +8,7 @@ import ProductsSidebar from "../../components/ProductsSidebar/ProductsSidebar"
 import TransformOembedToIframe from "../../utils/TransformOembedToIframe"
 
 //Component Styles
-import {
-  Wrapper,
-  ContentWrapper,
-  PageContent,
-  Image,
-  StyledImg,
-} from "./producto.styles"
+import { Wrapper, ContentWrapper, PageContent } from "./producto.styles"
 
 export default function producto(props) {
   const { pageContext } = props
