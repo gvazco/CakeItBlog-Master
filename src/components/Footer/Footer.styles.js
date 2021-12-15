@@ -6,6 +6,15 @@ export const Credits = styled.div`
   text-align: center;
   padding: 20px 10px 30px 10px;
   font-family: "Teko", Arial, Helvetica, sans-serif;
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: #ff6600;
+    cursor: pointer;
+  }
 `
 
 export const StyledH2 = styled.h2`
@@ -59,9 +68,6 @@ export const Wrapper = styled.footer`
     color:#fff;
     font-family: 'Teko', Arial, Helvetica, sans-serif;
       a{
-        
-        
-x;
         color:#fff;
         :hover {
         color: #f26e3b;

@@ -11,6 +11,12 @@ const Header = () => {
 
   return (
     <Wrapper>
+      <div className="phone">
+        <span>
+          Teléfonos: <a>55.5887.3716</a> / <a>55.5887.3717</a> /
+          <a> 800.286.7598</a>
+        </span>
+      </div>
       <Content>
         <Link to="/">
           <img src={Logo} alt={site.siteMetadata.title} />
