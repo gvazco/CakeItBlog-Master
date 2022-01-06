@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Multycasetas`,
-    description: `This is Cake It!`,
+    description: `En MultyCasetas comercializamos casetas prefabricadas de multipanel para su uso como casetas de obra, casetas de vigilancia y más.`,
     author: `@gvazco`,
-    siteUrl: `https://gvazco.github.io`,
+    siteUrl: `https://multycasetas.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

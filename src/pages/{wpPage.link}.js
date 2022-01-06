@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
+
+import Seo from "../components/SEO/SEO"
 //Components
 import Layout from "../components/Layout/Layout"
 import PageHero from "../components/PageHero/PageHero"
@@ -33,6 +35,7 @@ const PageContent = styled.article`
 
 const PageTemplate = ({ data }) => (
   <Layout>
+    <Seo title={data.wpPage.title} />
     {data.wpPage.featuredImage ? (
       <PageHero
         img={
