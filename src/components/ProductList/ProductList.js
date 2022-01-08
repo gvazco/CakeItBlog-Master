@@ -1,7 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import { map } from "lodash"
-import { Wrap, Grid, StyledImg, StyledH2 } from "./productsList.styles"
+import {
+  Wrap,
+  Grid,
+  StyledImg,
+  StyledH2,
+  StyledReadMore,
+} from "./productsList.styles"
 
 export default function ProductList(props) {
   const { productos } = props
@@ -21,15 +27,22 @@ export default function ProductList(props) {
                   }
                 />
               </Link>
-              <div>
-                <Link to={`/productos/${producto.slug}`}>
-                  <StyledH2>{producto.title}</StyledH2>
-                </Link>
-              </div>
-              <div>
-                <Wrap>
-                  <div dangerouslySetInnerHTML={{ __html: producto.excerpt }} />
-                </Wrap>
+              <div className="item_description">
+                <div>
+                  <Link to={`/productos/${producto.slug}`}>
+                    <StyledH2>{producto.title}</StyledH2>
+                  </Link>
+                </div>
+                <div>
+                  <Wrap>
+                    <div
+                      dangerouslySetInnerHTML={{ __html: producto.excerpt }}
+                    />
+                  </Wrap>
+                  <StyledReadMore to={`/productos/${producto.slug}`}>
+                    Leer más...
+                  </StyledReadMore>
+                </div>
               </div>
             </div>
           </div>

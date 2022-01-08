@@ -18,7 +18,7 @@ import {
   StyledReadMore,
   Image,
   StyledImg,
-} from "./archive.styles"
+} from "./archiveProyectos.styles"
 
 const archiveProyectos = ({
   data: { allWpProyecto },
@@ -54,35 +54,43 @@ const archiveProyectos = ({
         />
         <PageContent>
           <h1 dangerouslySetInnerHTML={{ __html: catName }} />
-          {allWpProyecto.edges.map(proyect => (
-            <article key={proyect.node.id} className="entry-content">
-              {proyect.node.featuredImage !== null ? (
-                <Image>
+          <div className="productos-list">
+            {allWpProyecto.edges.map(proyect => (
+              <article key={proyect.node.id} className="entry-content">
+                {proyect.node.featuredImage !== null ? (
+                  <Image>
+                    <Link to={proyect.node.uri}>
+                      <StyledImg
+                        image={
+                          proyect.node.featuredImage.node.localFile
+                            .childImageSharp.gatsbyImageData
+                        }
+                        alt="Galeria Image"
+                      />
+                    </Link>
+                  </Image>
+                ) : null}
+                <div className="content">
                   <Link to={proyect.node.uri}>
-                    <StyledImg
-                      image={
-                        proyect.node.featuredImage.node.localFile
-                          .childImageSharp.gatsbyImageData
-                      }
-                      alt="Galeria Image"
+                    <StyledH2
+                      dangerouslySetInnerHTML={{ __html: proyect.node.title }}
                     />
                   </Link>
-                </Image>
-              ) : null}
-              <Link to={proyect.node.uri}>
-                <StyledH2
-                  dangerouslySetInnerHTML={{ __html: proyect.node.title }}
-                />
-              </Link>
 
-              <StyledDate
-                dangerouslySetInnerHTML={{ __html: proyect.node.date }}
-              />
-              <p dangerouslySetInnerHTML={{ __html: proyect.node.excerpt }} />
-              <StyledReadMore to={proyect.node.uri}>Leer más...</StyledReadMore>
-              <div className="dot-divider" />
-            </article>
-          ))}
+                  <StyledDate
+                    dangerouslySetInnerHTML={{ __html: proyect.node.date }}
+                  />
+                  <p
+                    dangerouslySetInnerHTML={{ __html: proyect.node.excerpt }}
+                  />
+                  <StyledReadMore to={proyect.node.uri}>
+                    Leer más...
+                  </StyledReadMore>
+                </div>
+                <div className="dot-divider" />
+              </article>
+            ))}
+          </div>
           <Pagination
             catUri={catUri}
             page={currentPage}

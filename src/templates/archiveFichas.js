@@ -14,7 +14,6 @@ import {
   ContentWrapper,
   PageContent,
   StyledH2,
-  StyledDate,
   StyledReadMore,
   Image,
   StyledImg,
@@ -44,35 +43,37 @@ const archiveFichas = ({
         <FichasSidebar catId={catId} marcas={marcas.edges} />
         <PageContent>
           <h1 dangerouslySetInnerHTML={{ __html: catName }} />
-          {allWpFicha.edges.map(ficha => (
-            <article key={ficha.node.id} className="entry-content">
-              {ficha.node.featuredImage !== null ? (
-                <Image>
+          <div className="productos-list">
+            {allWpFicha.edges.map(ficha => (
+              <article key={ficha.node.id} className="entry-content">
+                {ficha.node.featuredImage !== null ? (
+                  <Image>
+                    <Link to={ficha.node.uri}>
+                      <StyledImg
+                        image={
+                          ficha.node.featuredImage.node.localFile
+                            .childImageSharp.gatsbyImageData
+                        }
+                        alt="Ficha Image"
+                      />
+                    </Link>
+                  </Image>
+                ) : null}
+                <div className="content">
                   <Link to={ficha.node.uri}>
-                    <StyledImg
-                      image={
-                        ficha.node.featuredImage.node.localFile.childImageSharp
-                          .gatsbyImageData
-                      }
-                      alt="Ficha Image"
+                    <StyledH2
+                      dangerouslySetInnerHTML={{ __html: ficha.node.title }}
                     />
                   </Link>
-                </Image>
-              ) : null}
-              <Link to={ficha.node.uri}>
-                <StyledH2
-                  dangerouslySetInnerHTML={{ __html: ficha.node.title }}
-                />
-              </Link>
-
-              <StyledDate
-                dangerouslySetInnerHTML={{ __html: ficha.node.date }}
-              />
-              <p dangerouslySetInnerHTML={{ __html: ficha.node.excerpt }} />
-              <StyledReadMore to={ficha.node.uri}>Leer más...</StyledReadMore>
-              <div className="dot-divider" />
-            </article>
-          ))}
+                  <p dangerouslySetInnerHTML={{ __html: ficha.node.excerpt }} />
+                  <StyledReadMore to={ficha.node.uri}>
+                    Leer más...
+                  </StyledReadMore>
+                </div>
+                <div className="dot-divider" />
+              </article>
+            ))}
+          </div>
           <Pagination
             catUri={catUri}
             page={currentPage}

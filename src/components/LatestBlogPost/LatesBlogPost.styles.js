@@ -14,18 +14,18 @@ export const Image = styled.div`
   overflow: hidden;
 
   img {
-    filter: brightness(70%);
+    filter: brightness(60%);
     transition: 0.3s ease-in;
   }
 
   :hover img {
-    filter: brightness(100%);
+    filter: brightness(90%);
     transform: scale(1.1);
-    filter: blur(2px);
+    filter: blur(1px);
   }
 
   @media (min-width: 768px) {
-    max-height: 200px;
+    max-height: 100%;
     width: 100%;
   }
 `

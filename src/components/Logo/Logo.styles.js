@@ -9,7 +9,7 @@ export const StyledImg = styled(GatsbyImage)`
 
 export const CTAImage = styled.div`
   margin-bottom: 20px;
-  max-height: 100px;
+  max-height: 150px;
   position: relative;
   overflow: hidden;
   margin: 0 5px;
@@ -18,12 +18,8 @@ export const CTAImage = styled.div`
     transform: scale(0.9);
   }
 
-  :hover img {
-    transform: scale(1.1);
-  }
-
   @media (min-width: 768px) {
-    max-height: 200px;
+    width: 90%;
   }
 `
 

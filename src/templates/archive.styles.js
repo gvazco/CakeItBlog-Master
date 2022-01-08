@@ -15,18 +15,15 @@ export const Image = styled.div`
   overflow: hidden;
 
   img {
-    filter: brightness(90%);
     transition: 0.3s ease-in;
   }
 
   :hover img {
-    filter: brightness(100%);
     transform: scale(1.1);
-    filter: blur(2px);
   }
 
   @media (min-width: 768px) {
-    max-height: 200px;
+    max-height: 600px;
     width: 100%;
   }
 `
