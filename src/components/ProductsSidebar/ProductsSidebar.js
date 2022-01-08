@@ -30,10 +30,10 @@ const ProductsSidebar = () => {
         </li>
         <li>
           <Link
-            to="/productos/estructuras-metalicas"
+            to="/productos/bodegas-de-lamina"
             activeClassName="sidebar-highlighted"
           >
-            <span>Estructuras Metálicas</span>
+            <span>Bodegas de Lámina</span>
           </Link>
         </li>
         <li>
