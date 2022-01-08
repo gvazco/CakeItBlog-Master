@@ -65,7 +65,6 @@ const archiveFichas = ({
                       dangerouslySetInnerHTML={{ __html: ficha.node.title }}
                     />
                   </Link>
-                  <p dangerouslySetInnerHTML={{ __html: ficha.node.excerpt }} />
                   <StyledReadMore to={ficha.node.uri}>
                     Leer más...
                   </StyledReadMore>
