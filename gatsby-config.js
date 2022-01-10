@@ -5,13 +5,6 @@ module.exports = {
     author: `@gvazco`,
     siteUrl: `https://multycasetas.com`,
   },
-  redirects: [
-    {
-      source: "/prueba",
-      destination: "https://github.com",
-      permanent: true,
-    },
-  ],
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
