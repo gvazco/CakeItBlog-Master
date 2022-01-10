@@ -13,8 +13,9 @@ const Header = () => {
     <Wrapper>
       <div className="phone">
         <span>
-          Teléfonos: <a>55.5887.3716</a> / <a>55.5887.3717</a> /
-          <a> 800.286.7598</a>
+          Teléfonos: <a href="tel:+52555873716">(55) 5887-3716</a> /{" "}
+          <a href="tel:+52555873717">(55) 5887-3717</a> /
+          <a href="tel:+528002867598"> (800) 286-7598</a>
         </span>
       </div>
       <Content>

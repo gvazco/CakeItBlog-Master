@@ -5,6 +5,13 @@ module.exports = {
     author: `@gvazco`,
     siteUrl: `https://multycasetas.com`,
   },
+  redirects: [
+    {
+      source: "/prueba",
+      destination: "https://github.com",
+      permanent: true,
+    },
+  ],
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -50,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Teko\:200,400,500,600,700`],
+        fonts: [`Teko\:200,400,500,600,700`, `Lato\:400,500`],
         display: `swap`,
       },
     },

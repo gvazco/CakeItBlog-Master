@@ -9,7 +9,6 @@ import {
   ImageText,
   Html,
 } from "./LatesBlogPost.styles"
-import { node } from "prop-types"
 
 const LatestBlogPost = () => {
   const data = useLatestBlogPost()

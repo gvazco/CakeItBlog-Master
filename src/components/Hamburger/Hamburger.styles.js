@@ -18,6 +18,10 @@ export const HamburgerButton = styled.div`
       transform: scale(1.2);
     }
 
+    @media (max-width: 368px) {
+      top: 40px;
+    }
+
     @media (min-width: 992px) {
       display: none;
     }

@@ -42,10 +42,10 @@ export const Wrapper = styled.footer`
     font-family: 'Teko', Arial, Helvetica, sans-serif;
   }
 
-  
+
 
   .listing {
-  
+
   list-style:none;
   display: grid;
   grid-template-columns: 1fr;
@@ -55,7 +55,7 @@ export const Wrapper = styled.footer`
   padding: 0 25px;
   text-align: center;
 
-  
+
   li.menu{
     p{
       line-height: 35px;
@@ -63,7 +63,7 @@ export const Wrapper = styled.footer`
   }
 
     li > p {
-      
+
     font-size:20px;
     color:#fff;
     font-family: 'Teko', Arial, Helvetica, sans-serif;
@@ -83,16 +83,19 @@ export const Wrapper = styled.footer`
           margin:12px 3px 0 0;
           :hover{
             filter: invert(56%) sepia(81%) saturate(2559%) hue-rotate(337deg) brightness(99%) contrast(92%);
-            
+
           }
         }
-    
+
 
     span {
         margin-bottom:20px;
+        font-size:20px;
+        color:#fff;
+        font-family: 'Teko', Arial, Helvetica, sans-serif;
       }
 
-    
+
 
     @media screen and (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;

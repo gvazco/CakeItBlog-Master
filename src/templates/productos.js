@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 //Components
@@ -12,7 +12,7 @@ import ProductsSidebar from "../components/ProductsSidebar/ProductsSidebar"
 import { Wrapper, ContentWrapper, PageContent } from "./archive.styles"
 
 export default function Productos(props) {
-  const { data, pageContext } = props
+  const { data } = props
   const productos = data.allWpProducto.nodes
 
   return (

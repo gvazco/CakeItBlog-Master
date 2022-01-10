@@ -10,18 +10,22 @@ export const Wrapper = styled.header`
 
   .phone {
     text-align: center;
-    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-family: "Lato";
     text-transform: uppercase;
     color: #212121;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
     padding: 10px 0 0 0;
     background: #dddddd;
 
     a:hover {
       color: #ff6600;
       cursor: pointer;
+    }
+
+    @media (max-width: 368px) {
+      display: none;
     }
   }
 `
@@ -39,5 +43,9 @@ export const Content = styled.div`
     width: 120px;
     margin: 0;
     padding-bottom: 10px;
+  }
+
+  @media (max-width: 368px) {
+    padding: 20px;
   }
 `

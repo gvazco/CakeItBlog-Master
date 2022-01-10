@@ -34,7 +34,7 @@ const Footer = () => (
             <Link to="/contacto">Contacto</Link>
           </p>
         </li>
-        <p>
+        <li>
           <StyledH2>Encuéntranos en:</StyledH2>
           <span>Dirección: </span>
           <p>
@@ -49,7 +49,7 @@ const Footer = () => (
           <p>
             Lunes - Viernes: 08.00-18.00 <br /> Sábado: 09.00-12.00
           </p>
-        </p>
+        </li>
         <li className="redes">
           <StyledH2>Siguenos en Redes:</StyledH2>
           <p>
