@@ -14,7 +14,7 @@ export const Wrapper = styled.header`
     text-transform: uppercase;
     color: #212121;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1px;
     padding: 10px 0 0 0;
     background: #dddddd;
