@@ -62,13 +62,13 @@ export const StyledH2 = styled.h2`
 `
 
 export const StyledDate = styled.div`
-  font-family: "Teko";
+  font-family: "Lato";
   font-size: 1.1rem;
   font-weight: 600;
 `
 
 export const StyledReadMore = styled(Link)`
-  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 800;
   color: #fff;

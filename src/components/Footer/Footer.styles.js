@@ -5,7 +5,7 @@ export const Credits = styled.div`
   background: #0c0c0c;
   text-align: center;
   padding: 20px 10px 30px 10px;
-  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 
   a {
     color: #fff;
@@ -20,7 +20,7 @@ export const Credits = styled.div`
 export const StyledH2 = styled.h2`
   font-weight: 500;
   font-size: 1.5rem;
-  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 `
 export const Wrapper = styled.footer`
   display: flex;
@@ -39,7 +39,7 @@ export const Wrapper = styled.footer`
   p {
     margin: 0;
     padding: 0;
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
   }
 
 
@@ -66,7 +66,7 @@ export const Wrapper = styled.footer`
 
     font-size:20px;
     color:#fff;
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
       a{
         color:#fff;
         :hover {
@@ -92,7 +92,7 @@ export const Wrapper = styled.footer`
         margin-bottom:20px;
         font-size:20px;
         color:#fff;
-        font-family: 'Teko', Arial, Helvetica, sans-serif;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
       }
 
 

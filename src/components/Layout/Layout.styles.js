@@ -1,8 +1,8 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components"
 
 export const Primary = styled.main`
   padding: 110px 0 0 0;
-`;
+`
 
 export const GlobalStyles = createGlobalStyle`
 {
@@ -75,7 +75,7 @@ export const GlobalStyles = createGlobalStyle`
     font-style: italic;
   }
   h1 {
-    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 2em;
     margin: 0.67em 0;
@@ -250,7 +250,7 @@ export const GlobalStyles = createGlobalStyle`
 
   h1 {
     font-size: 2.2rem;
-    font-family: 'Teko', Arial;
+    font-family: 'Lato', Arial;
     font-weight: 800;
     letter-spacing: 1px;
     color: #282828;
@@ -268,7 +268,7 @@ export const GlobalStyles = createGlobalStyle`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: 'Teko', Arial, Helvetica Neue, sans-serif;
+    font-family: 'Lato', Arial, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.62671rem;
@@ -615,4 +615,4 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 }
-`;
+`

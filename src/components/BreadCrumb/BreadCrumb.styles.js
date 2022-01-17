@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 1rem;
   margin: 10px 0;
@@ -16,4 +16,4 @@ export const Wrapper = styled.div`
   .divider {
     margin: 0 10px;
   }
-`;
+`

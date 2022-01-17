@@ -45,7 +45,7 @@ export const ImageTextWrapper = styled.div`
 
 export const ImageText = styled.h1`
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-family: "Teko";
+  font-family: "Lato";
   color: #fff !important;
   font-weight: 700;
   letter-spacing: 1.5px;

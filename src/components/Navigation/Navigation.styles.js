@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.nav`
-  font-family: "Teko", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   color: #212121;
   font-size: 1rem;
@@ -16,10 +16,6 @@ export const Wrapper = styled.nav`
   @media (min-width: 992px) {
     font-size: 0.85rem;
     display: block;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 1rem;
   }
 
   ul li {

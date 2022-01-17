@@ -44,7 +44,7 @@ export const CTAImageTextWrapper = styled.div`
 
 export const CTAImageText = styled.p`
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-family: "Teko";
+  font-family: "Lato";
   font-weight: 700;
   letter-spacing: 3px;
   font-size: 1.3rem;

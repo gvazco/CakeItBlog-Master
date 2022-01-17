@@ -119,7 +119,7 @@ const PageContent = styled.article`
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 13px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.19);
@@ -137,7 +137,7 @@ const PageContent = styled.article`
     height: 140px;
     max-height: 140px;
     min-height: 140px;
-    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 13px;
     border-radius: 5px;
     padding: 5px;
@@ -150,7 +150,7 @@ const PageContent = styled.article`
   }
 
   .newmessagewts {
-    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     display: block;
     text-align: center;
     width: 100%;
@@ -169,7 +169,7 @@ const PageContent = styled.article`
     color: white;
     cursor: pointer;
     font-size: 1.5rem;
-    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     animation: pulse 3s infinite;
     border-radius: 40px;
     background: linear-gradient(90deg, #f26e3b, #d22e26);

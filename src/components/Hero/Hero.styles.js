@@ -47,8 +47,8 @@ export const HeaderWrapper = styled.div`
   }
 
   button {
-    font-family: "Teko", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
     font-weight: 800;
     color: #fff;
     position: relative;
@@ -64,7 +64,7 @@ export const HeaderWrapper = styled.div`
       width: 120px;
       height: 50px;
       bottom: 150px;
-      font-size: 1.5rem;
+      font-size: 1rem;
 
       :after{
         border-width: 25px !important;
@@ -92,9 +92,9 @@ export const HeaderWrapper = styled.div`
 
     :hover:after {
       border-left-color: #f26e3b;
-    
-    
-    
+
+
+
   }
 
   h1 {
@@ -103,7 +103,7 @@ export const HeaderWrapper = styled.div`
     color: #fff;
     text-transform: none;
     text-align: center;
-    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     letter-spacing: 5px;
     text-shadow: #000 2px 2px 2px;
     width: 66%;

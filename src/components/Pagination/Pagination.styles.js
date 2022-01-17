@@ -8,7 +8,7 @@ export const Wrapper = styled.nav`
   justify-content: space-between;
 
   .navBack {
-    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 800;
     color: #fff;
@@ -26,7 +26,7 @@ export const Wrapper = styled.nav`
   }
 
   .navForward {
-    font-family: "Teko", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 800;
     color: #fff;
