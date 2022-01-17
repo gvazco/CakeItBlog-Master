@@ -69,7 +69,7 @@ export const StyledDate = styled.div`
 
 export const StyledReadMore = styled(Link)`
   font-family: "Lato", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 800;
   color: #fff;
   position: relative;
