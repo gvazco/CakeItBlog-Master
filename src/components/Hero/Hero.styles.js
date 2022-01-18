@@ -59,6 +59,8 @@ export const HeaderWrapper = styled.div`
     background: #000;
     padding: 3px 0 0 10px;
     margin-bottom: 30px;
+    cursor: pointer;
+
 
     @media (min-width: 992px) {
       width: 120px;
