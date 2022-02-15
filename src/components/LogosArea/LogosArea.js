@@ -42,7 +42,7 @@ const LogosArea = () => {
     <Wrapper data-aos="zoom-in">
       <h1>Nuestros Clientes</h1>
       <Slider {...settings}>
-        {new Array(6).fill("").map((element, i) => (
+        {new Array(12).fill("").map((element, i) => (
           <div>
             <Logo
               key={i + Math.random()}

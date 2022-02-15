@@ -31,6 +31,24 @@ export const useLogosQuery = () => {
           logo6Image {
             ...logoImage
           }
+          logo7Image {
+            ...logoImage
+          }
+          logo8Image {
+            ...logoImage
+          }
+          logo9Image {
+            ...logoImage
+          }
+          logo10Image {
+            ...logoImage
+          }
+          logo11Image {
+            ...logoImage
+          }
+          logo12Image {
+            ...logoImage
+          }
         }
       }
     }
