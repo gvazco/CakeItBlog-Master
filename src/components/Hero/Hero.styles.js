@@ -65,7 +65,7 @@ export const HeaderWrapper = styled.div`
 
   button {
     font-family: "Lato", Arial, Helvetica, sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.6em;
     font-weight: 700;
     color: #000;
     position: relative;
@@ -81,7 +81,6 @@ export const HeaderWrapper = styled.div`
     );
     border: none;
     border-radius: 3px;
-    padding: 5px;
     margin-bottom: 30px;
     cursor: pointer;
 
@@ -89,7 +88,7 @@ export const HeaderWrapper = styled.div`
       width: 120px;
       height: 50px;
       bottom: 150px;
-      font-size: 1rem;
+      font-size: 1em;
     }
 
     :hover {
