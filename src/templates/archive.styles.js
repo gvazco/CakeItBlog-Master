@@ -71,34 +71,17 @@ export const StyledReadMore = styled(Link)`
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   font-weight: 800;
-  color: #fff;
+  color: #000;
   position: relative;
   width: 90px;
   height: 30px;
   display: block;
-  background: #000;
+  background: #fff;
   padding: 3px 0 0 10px;
   margin-bottom: 30px;
 
-  :after {
-    left: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: "";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-left-color: #000;
-    border-width: 15px;
-    margin-top: -15px;
-  }
-
   :hover {
     background: #f26e3b;
-  }
-
-  :hover:after {
-    border-left-color: #f26e3b;
+    color: #fff;
   }
 `

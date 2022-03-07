@@ -44,8 +44,8 @@ const Hero = () => {
           data-aos-once="false"
         >
           <FrontText image={frontText} alt="Hero Text" />
-          <Link to="/productos/casetas-de-multypanel/">
-            <button>Ver Más...</button>
+          <Link to="/fichas_tecnicas/casetas-de-multypanel/">
+            <button>Ver Todas...</button>
           </Link>
         </div>
 

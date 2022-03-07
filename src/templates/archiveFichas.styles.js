@@ -48,7 +48,7 @@ export const ContentWrapper = styled.div`
 export const PageContent = styled.article`
   margin: 20px 0 20px 0;
 
-  .productos-list{
+  .productos-list {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -57,40 +57,37 @@ export const PageContent = styled.article`
     padding: 0 20px;
 
     @media screen and (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   .entry-content {
-      width: 100%;
-      box-shadow: 3px 3px 5px #999 !important;
-      padding:5px;
+    width: 100%;
+    box-shadow: 3px 3px 5px #999 !important;
+    padding: 5px;
 
-     @media screen and (min-width: 768px) {
-        max-width:220px;
-      }
-
-      @media screen and (min-width: 1280px) {
-        max-width:250px;
-      }
+    @media screen and (min-width: 768px) {
+      max-width: 220px;
     }
 
-    .content {
-      padding: 20px;
-      p{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        line-height: 25px;
-        max-height: 100px;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        font-size: 16px;
-      }
+    @media screen and (min-width: 1280px) {
+      max-width: 250px;
     }
   }
 
+  .content {
+    padding: 20px;
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-height: 25px;
+      max-height: 100px;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      font-size: 16px;
+    }
+  }
 `
 
 export const StyledH2 = styled.h2`

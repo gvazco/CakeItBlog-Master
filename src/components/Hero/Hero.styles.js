@@ -35,10 +35,9 @@ export const HeaderWrapper = styled.div`
   height: 100%;
   width: 100%;
 
-   @media (min-width: 1920px) {
+  @media (min-width: 1920px) {
     left: 100px;
-
-  } ;
+  }
 
   div {
     display: flex;
@@ -50,53 +49,30 @@ export const HeaderWrapper = styled.div`
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     font-weight: 800;
-    color: #fff;
+    color: #000;
     position: relative;
     bottom: 90px;
     width: 100px;
     height: 35px;
     display: block;
-    background: #000;
-    padding: 3px 0 0 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 3.5px solid #f26e3b;
+    border-radius: 3px;
+    padding: 5px;
     margin-bottom: 30px;
     cursor: pointer;
-
 
     @media (min-width: 992px) {
       width: 120px;
       height: 50px;
       bottom: 150px;
       font-size: 1rem;
-
-      :after{
-        border-width: 25px !important;
-        top: 30% !important;
-      }
-    }
-
-    :after {
-      left: 100%;
-      top:44%;
-      border: solid transparent;
-      content: "";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-left-color: #000;
-      border-width: 17px;
-      margin-top: -15px;
     }
 
     :hover {
       background: #f26e3b;
+      color: #fff;
     }
-
-    :hover:after {
-      border-left-color: #f26e3b;
-
-
-
   }
 
   h1 {
