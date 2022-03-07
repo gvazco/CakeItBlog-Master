@@ -46,7 +46,7 @@ const Hero = () => {
         >
           <FrontText image={frontText} alt="Hero Text" />
           <Link to="/fichas_tecnicas/casetas-de-multypanel/">
-            <button>Ver Todas...</button>
+            <button>Ver más...</button>
           </Link>
         </div>
 

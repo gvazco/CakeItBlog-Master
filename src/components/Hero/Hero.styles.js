@@ -38,6 +38,8 @@ export const HeaderWrapper = styled.div`
   height: 100%;
   width: 100%;
 
+  transition: 1s all ease-in-out;
+
   @media (min-width: 1920px) {
     left: 100px;
   }
@@ -71,8 +73,13 @@ export const HeaderWrapper = styled.div`
     width: 100px;
     height: 35px;
     display: block;
-    background: rgba(255, 255, 255, 0.3);
-    border: 3.5px solid #f26e3b;
+    transition: 2s all ease-in-out;
+    background: linear-gradient(
+      90deg,
+      rgb(242, 110, 59),
+      rgba(242, 110, 59, 0.2)
+    );
+    border: none;
     border-radius: 3px;
     padding: 5px;
     margin-bottom: 30px;
@@ -86,8 +93,13 @@ export const HeaderWrapper = styled.div`
     }
 
     :hover {
-      background: #f26e3b;
-      color: #fff;
+      transition: 2s all ease-in-out;
+      background: linear-gradient(
+        90deg,
+        rgba(242, 110, 59, 0.2),
+        rgb(242, 110, 59)
+      );
+      color: #000;
     }
   }
 
