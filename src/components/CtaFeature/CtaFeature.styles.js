@@ -39,7 +39,7 @@ export const CtaImageTextWrapper = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 20px;
 `
 
 export const CtaImageText = styled.p`

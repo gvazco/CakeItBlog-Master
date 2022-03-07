@@ -65,8 +65,8 @@ export const HeaderWrapper = styled.div`
 
   button {
     font-family: "Lato", Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
-    font-weight: 800;
+    font-size: 0.6rem;
+    font-weight: 700;
     color: #000;
     position: relative;
     bottom: 90px;

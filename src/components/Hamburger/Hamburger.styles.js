@@ -19,11 +19,11 @@ export const HamburgerButton = styled.div`
     }
 
     @media (max-width: 420px) {
-      top: 3em !important;
+      top: 2.8em !important;
     }
 
     @media (max-width: 450px) {
-      top: 4.2em;
+      top: 4em;
     }
 
     @media (min-width: 992px) {
