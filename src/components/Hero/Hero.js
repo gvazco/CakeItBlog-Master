@@ -35,6 +35,7 @@ const Hero = () => {
 
       <HeaderWrapper>
         <div
+          className="fronText"
           data-aos="fade-down"
           data-aos-anchor-placement="top-bottom"
           data-aos-offset="320"
@@ -50,6 +51,7 @@ const Hero = () => {
         </div>
 
         <div
+          className="fronImage"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-offset="260"

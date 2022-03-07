@@ -24,8 +24,9 @@ export const Wrapper = styled.header`
       cursor: pointer;
     }
 
-    @media (max-width: 368px) {
+    @media (max-width: 420px) {
       display: none;
+      height: 100px;
     }
   }
 `
@@ -40,12 +41,17 @@ export const Content = styled.div`
   padding: 0 20px 20px 20px;
 
   img {
-    width: 120px;
+    width: 90px;
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+
+    @media (min-width: 450px) {
+      width: 120px;
+      padding-bottom: 10px;
+    }
   }
 
-  @media (max-width: 368px) {
-    padding: 20px;
+  @media (max-width: 420px) {
+    padding: 10px;
   }
 `

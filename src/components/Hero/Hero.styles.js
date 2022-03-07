@@ -19,6 +19,9 @@ export const FrontImg = styled(GatsbyImage)`
 export const FrontText = styled(GatsbyImage)`
   max-height: 600px;
   margin-bottom: 60px;
+  @media (max-width: 450px) {
+    margin-bottom: 65px;
+  }
 `
 
 export const Wrapper = styled.div`
@@ -43,6 +46,19 @@ export const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  div.fronText {
+    @media (max-width: 450px) {
+      margin-top: 15%;
+    }
+  }
+
+  div.fronImage {
+    @media (max-width: 450px) {
+      position: relative;
+      bottom: 20px;
+    }
   }
 
   button {
